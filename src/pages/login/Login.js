@@ -18,8 +18,8 @@ export default function Login() {
           placeholder="Enter yout password"
         />
         <button className="loginButton">Login</button>
-        <button className="registerButton">Register</button>
       </form>
+      <button className="registerButton">Register</button>
     </div>
   );
 }

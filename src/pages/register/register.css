@@ -1,0 +1,49 @@
+.register {
+  color: white;
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: url("https://dmxg5wxfqgb4u.cloudfront.net/styles/card/s3/2022-04/UFC-274-Textless-Event-Art.jpg?h=d1cb525d&itok=4cc5ks-x");
+  object-fit: cover;
+}
+.registerTitle {
+  font-size: 50px;
+}
+.registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm > label {
+  margin: 10px 0;
+}
+
+.registerInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+}
+
+.registerRegButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: aqua;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.registerLoginButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: bisque;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
