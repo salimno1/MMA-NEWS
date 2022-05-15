@@ -1,16 +1,31 @@
 import "./singlePost.css";
+import { useLocation } from "react-router";
+import { useEffect } from "react";
+import axios from "axios";
+import { useState } from "react";
 
 export default function SinglePost() {
+  const location = useLocation();
+  const path = location.pathname.split("/")[2];
+  const [post, setPost] = useState({});
+
+  useEffect(() => {
+    const getPost = async () => {
+      const res = await axios.get("/posts/" + path);
+      setPost(res.data);
+    };
+    getPost();
+  }, [path]);
+
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        <img
-          className="singlePostImg"
-          src="https://library.sportingnews.com/styles/crop_style_16_9_mobile_2x/s3/2022-05/nba-plain--19382c48-848e-4b38-9fcf-03df11ad94e8.png?itok=SFYEHF7E"
-          alt=""
-        />
+        {post.photo && (
+          <img className="singlePostImg" src={post.photo} alt="" />
+        )}
+
         <h1 className="singlePostTitle">
-          Lorem ipsum dolor sit
+          {post.title}
           <div className="singlePostEdit">
             <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
             <i className="singlePostIcon fa-solid fa-trash-can"></i>
@@ -18,16 +33,13 @@ export default function SinglePost() {
         </h1>
         <div className="singlePostInfo">
           <span className="singlePostAuthor">
-            Author: <b>Salim</b>
+            Author:<b>{post.username}</b>
           </span>
-          <span className="singlePostDate">1 hour ago</span>
+          <span className="singlePostDate">
+            {new Date(post.createdAt).toDateString()}
+          </span>
         </div>
-        <p className="singlePostDesc">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          corrupti vel illo officiis, ullam in officia nesciunt aliquid, beatae
-          dignissimos consequuntur? A quia architecto corporis dignissimos
-          consequatur cupiditate sint explicabo?
-        </p>
+        <p className="singlePostDesc">{post.desc}</p>
       </div>
     </div>
   );
