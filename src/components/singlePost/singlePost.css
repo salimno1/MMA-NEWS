@@ -5,6 +5,8 @@
 .singlePostWrapper {
   padding: 20px;
   padding-right: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .singlePostImg {
@@ -43,4 +45,34 @@
   margin-left: 20px;
   font-size: 30px;
   font-weight: 600px;
+}
+
+.singlePostTitleInput {
+  margin: 10px;
+  font-size: 28px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.singlePostTitleInput:focus {
+  outline: none;
+}
+
+.singlePostDescInput {
+  border: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+.singlePostDescInput:focus {
+  outline: none;
+}
+.singlePostDesc {
+  font-size: 18px;
+  line-height: 25px;
+}
+.singlePostBtn {
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+  align-self: flex-end;
 }
