@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: url("https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/03/31/16487345267062.jpg");
+  background-image: url("https://www.teahub.io/photos/full/25-251070_ufc-wallpaper-mendes-mcgregor.jpg");
   object-fit: cover;
 }
 .loginTitle {

@@ -15,16 +15,18 @@ export default function Post({ post }) {
             <span className="postCat">{c.name}</span>;
           })}
         </div>
-        <Link to={`/post/${post._id}`} className="link">
-          <span className="postTitle">{post.title}</span>
+        <Link to={`/post/${post._id}`} className="link1">
+          <p className="postTitle">{post.title}</p>
         </Link>
 
-        <hr />
         <span className="postDate">
           {new Date(post.createdAt).toDateString()}
         </span>
       </div>
       <p className="postDesc">{post.desc}</p>
+      <Link to={`/post/${post._id}`} className="link">
+        <button className="readMoreLink">Read more</button>
+      </Link>
     </div>
   );
 }

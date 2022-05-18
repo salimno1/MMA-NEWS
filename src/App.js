@@ -1,3 +1,4 @@
+import "./app.css";
 import Topbar from "./components/topbar/topBar";
 import Home from "./pages/home/Home";
 import Settings from "./pages/settings/settings";

@@ -1,18 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Oswald&display=swap");
 .post {
-  width: 385px;
-  margin: 0px 25px 40px 25px;
+  flex: 7;
+  width: 1024px;
+  margin: 5px 0px 1px 0px;
+  background-color: white;
+  padding-bottom: 50px;
 }
 
 .postImg {
   width: 100%;
-  height: 280px;
+  height: 380px;
   object-fit: cover;
-  border-radius: 7px;
+  object-position: top;
 }
 .postInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.link1 {
+  text-decoration: underline;
+  color: inherit;
 }
 
 .postCat {
@@ -25,24 +33,43 @@
 }
 
 .postTitle {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   margin-top: 15px;
+  padding: 20px;
   cursor: pointer;
+  font-family: "Koulen", cursive;
+  font-family: "Oswald", sans-serif;
 }
 .postDate {
   font-style: italic;
   font-size: 13px;
-  color: #999;
+  color: rgb(32, 32, 32);
 }
 .postDesc {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 24px;
-  color: #444;
+  color: rgb(42, 42, 42);
   margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+.readMoreLink {
+  background-color: rgb(31, 31, 31);
+  margin-top: 20px;
+  color: rgb(225, 225, 225);
+  font-size: large;
+  border: none;
+  height: 50px;
+  width: 90%;
+  margin-left: 5%;
+}
+.readMoreLink:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
 }

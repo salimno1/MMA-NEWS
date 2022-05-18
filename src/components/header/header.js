@@ -3,13 +3,11 @@ import "./header.css";
 export default function Header() {
   return (
     <div className="header">
-      <div className="headerTitles">
-        <span className="headerTitleSmall">React & Node</span>
-        <span className="headerTitleLarge">Blog</span>
-      </div>
       <img
         className="headerImg"
-        src="https://www.mitti.se/_internal/cimg!0/2pnak0a9oyceaunpfec0x6alue1ujff.jpeg"
+        //https://www.teahub.io/photos/full/25-251070_ufc-wallpaper-mendes-mcgregor.jpg
+        //https://www.itl.cat/pngfile/big/27-271092_ufc-wallpaper-2018-66-pictures-jon-jones.jpg
+        src="https://ctthoughtshome.files.wordpress.com/2020/06/ufc-1.jpg"
         alt=""
       />
     </div>

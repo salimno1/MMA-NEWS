@@ -13,10 +13,11 @@ export default function Topbar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <i class="topIcon fa-brands fa-facebook"></i>
-        <i class="topIcon fa-brands fa-facebook"></i>
-        <i class="topIcon fa-brands fa-facebook"></i>
-        <i class="topIcon fa-brands fa-facebook"></i>
+        <img
+          className="img"
+          src="https://www.mmaglobal.com/files/upload/eg-mma-black-on-white-bg-20210629.png"
+          alt=""
+        />
       </div>
       <div className="topCenter">
         <ul className="topList">
@@ -25,27 +26,20 @@ export default function Topbar() {
               HOME
             </Link>
           </li>
-          <li className="topListItem">
-            <Link className="link" to="/">
-              ABOUT
-            </Link>
-          </li>
-          <li className="topListItem">
-            <Link className="link" to="/">
-              CONTACT
-            </Link>
-          </li>
+
           <li className="topListItem">
             <Link className="link" to="/write">
               WRITE
             </Link>
           </li>
+        </ul>
+      </div>
+      <div className="topRight">
+        <ul className="topList">
           <li className="topListItem" onClick={handleLogout}>
             {user && "LOGOUT"}
           </li>
         </ul>
-      </div>
-      <div className="topRight">
         {user ? (
           <Link to="/settings">
             <img className="topImg" src={PF + user.profilePic} alt="" />
@@ -64,8 +58,6 @@ export default function Topbar() {
             </li>
           </ul>
         )}
-
-        <i className="topSearch fa-solid fa-magnifying-glass"></i>
       </div>
     </div>
   );

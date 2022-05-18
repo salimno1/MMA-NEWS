@@ -1,19 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 .top {
   width: 100%;
   z-index: 999;
-  height: 50px;
+  height: 80px;
   position: sticky;
   top: 0;
   display: flex;
   align-items: center;
+  font-family: "Koulen", cursive;
+  background-color: white;
 }
 
-.topLeft,
+.topLeft {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 25px;
+}
 .topRight {
   flex: 3;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 50px;
 }
 .topCenter {
   flex: 6;
@@ -28,7 +38,7 @@
 .topIcon {
   font-size: 20px;
   margin-right: 10px;
-  color: #444;
+  color: rgb(27, 27, 27);
   cursor: pointer;
 }
 .topList {
@@ -39,14 +49,20 @@
   list-style: none;
 }
 .topListItem {
-  margin-right: 20px;
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 .topSearch {
   font-size: 18px;
   color: #666;
   cursor: pointer;
   margin-left: 15px;
+}
+.img {
+  height: 80px;
+  width: 100px;
 }

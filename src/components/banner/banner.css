@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+.banner {
+  height: 200px;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.849);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: "Koulen", cursive;
+  font-size: 50px;
+  padding-left: 50px;
+}
+
+.bannerP:hover {
+  color: white;
+  cursor: pointer;
+}
