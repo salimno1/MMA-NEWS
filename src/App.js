@@ -36,7 +36,7 @@ function App() {
         <Route
           exact
           path="/write"
-          element={user ? <Write /> : <Register />}
+          element={user ? <Write /> : <Login />}
         ></Route>
         <Route
           exact

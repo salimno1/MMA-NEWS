@@ -1,19 +1,35 @@
 .write {
-  padding-top: 50px;
+  background-color: #dfdfdf;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .writeImg {
-  margin-left: 150px;
-  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
   height: 250px;
-  border-radius: 10px;
+  background-color: white;
   object-fit: cover;
 }
 .writeForm {
-  position: relative;
+  height: 500px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
 }
 
 .writeFormGroup {
-  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+.writeFormGroup1 {
+  height: 400px;
   display: flex;
   align-items: center;
 }
@@ -43,11 +59,9 @@
   font-size: 20px;
 }
 .writeSubmit {
-  position: absolute;
-  top: 20px;
-  right: 50px;
   color: white;
-  background-color: teal;
+  width: 20%;
+  background-color: black;
   padding: 10px;
   border: none;
   border-radius: 10px;

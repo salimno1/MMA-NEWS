@@ -4,6 +4,7 @@ import { Context } from "../../context/Context";
 import "./login.css";
 import axios from "axios";
 import { useRef } from "react";
+import Footer from "../../components/footer/Footer";
 
 export default function Login() {
   const userRef = useRef();
@@ -27,7 +28,6 @@ export default function Login() {
 
   return (
     <div className="login">
-      <pan className="loginTitle">Login</pan>
       <form className="loginForm" onSubmit={handleSubmit}>
         <label>Username</label>
         <input
@@ -46,12 +46,14 @@ export default function Login() {
         <button className="loginButton" type="submit" disabled={isFetching}>
           Login
         </button>
+        <button className="registerButton">
+          <Link className="link" to="/register">
+            Register
+          </Link>
+        </button>
       </form>
-      <button className="registerButton">
-        <Link className="link" to="/register">
-          Register
-        </Link>
-      </button>
+
+      <Footer />
     </div>
   );
 }

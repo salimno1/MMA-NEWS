@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useContext, useState } from "react";
+import Footer from "../../components/footer/Footer";
 import { Context } from "../../context/Context";
 import "./write.css";
 
@@ -56,7 +57,7 @@ export default function Write() {
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        <div className="writeFormGroup">
+        <div className="writeFormGroup1">
           <textarea
             placeholder="Tell your story"
             type="text"
@@ -68,6 +69,7 @@ export default function Write() {
           Publish
         </button>
       </form>
+      <Footer />
     </div>
   );
 }

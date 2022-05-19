@@ -34,6 +34,7 @@
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+  margin-left: 10px;
 }
 .topIcon {
   font-size: 20px;
@@ -48,12 +49,24 @@
   padding: 0;
   list-style: none;
 }
+
 .topListItem {
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
+}
+.topListItem1 {
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.topListItem2 {
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 .topSearch {

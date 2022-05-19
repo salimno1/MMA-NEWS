@@ -20,8 +20,9 @@ export default function Topbar() {
         />
       </div>
       <div className="topCenter">
+        {" "}
         <ul className="topList">
-          <li className="topListItem">
+          <li className="topListItem1">
             <Link className="link" to="/">
               HOME
             </Link>
@@ -36,7 +37,7 @@ export default function Topbar() {
       </div>
       <div className="topRight">
         <ul className="topList">
-          <li className="topListItem" onClick={handleLogout}>
+          <li className="topListItem2" onClick={handleLogout}>
             {user && "LOGOUT"}
           </li>
         </ul>
