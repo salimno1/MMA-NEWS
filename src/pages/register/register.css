@@ -1,49 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 .register {
-  color: white;
-  height: calc(100vh - 50px);
+  color: rgb(22, 22, 22);
+  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: url("https://dmxg5wxfqgb4u.cloudfront.net/styles/card/s3/2022-04/UFC-274-Textless-Event-Art.jpg?h=d1cb525d&itok=4cc5ks-x");
+  align-items: center;
+  background-color: #dfdfdf;
   object-fit: cover;
 }
-.registerTitle {
-  font-size: 50px;
+.loginTitle {
 }
 .registerForm {
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
+  height: 500px;
 }
 
 .registerForm > label {
-  margin: 10px 0;
+  margin: 0px 0;
+  font-family: "Koulen", cursive;
 }
 
 .registerInput {
   padding: 10px;
   background-color: white;
   border: none;
+  margin-bottom: 10px;
 }
 
-.registerRegButton {
-  margin-top: 20px;
-  cursor: pointer;
-  background-color: aqua;
-  border: none;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
+.registerButton:hover {
 }
-.registerLoginButton {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: bisque;
+.registerButton:disabled {
+  cursor: not-allowed;
+  background-color: rgb(210, 210, 210);
+}
+.registerButton1 {
+  background-color: rgb(15, 15, 15);
   cursor: pointer;
   border: none;
   padding: 10px;
-  color: white;
+  color: rgb(242, 242, 242);
   border-radius: 10px;
+  margin-top: 10px;
+}
+.registerButton:hover {
 }

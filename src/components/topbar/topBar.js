@@ -13,11 +13,13 @@ export default function Topbar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <img
-          className="img"
-          src="https://www.mmaglobal.com/files/upload/eg-mma-black-on-white-bg-20210629.png"
-          alt=""
-        />
+        <Link to="/">
+          <img
+            className="img"
+            src="https://www.mmaglobal.com/files/upload/eg-mma-black-on-white-bg-20210629.png"
+            alt=""
+          />
+        </Link>
       </div>
       <div className="topCenter">
         {" "}

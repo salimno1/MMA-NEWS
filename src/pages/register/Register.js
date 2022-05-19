@@ -2,6 +2,7 @@ import "./register.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import Footer from "../../components/footer/Footer";
 
 export default function Register() {
   const [username, setUsername] = useState("");
@@ -25,7 +26,6 @@ export default function Register() {
   };
   return (
     <div className="register">
-      <pan className="registerTitle">Register</pan>
       <form className="registerForm" onSubmit={handleSubmit}>
         <label>Username</label>
         <input
@@ -49,16 +49,13 @@ export default function Register() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button className="registerRegButton" type="submit">
+        <button className="registerButton1" type="submit">
           Register
         </button>
       </form>
-      <button className="registerLoginButton">
-        <Link className="link" to="/login">
-          Login
-        </Link>
-      </button>
+
       {error && <span style={{ color: "red" }}>something went wrong</span>}
+      <Footer></Footer>
     </div>
   );
 }
